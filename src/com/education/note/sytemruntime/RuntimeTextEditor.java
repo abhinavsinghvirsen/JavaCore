@@ -10,12 +10,15 @@ public class RuntimeTextEditor {
             // Create and write to a temporary text file
             String filePath = "/tmp/hello_world.txt"; // macOS/Linux temp directory
             FileWriter writer = new FileWriter(filePath);
-            writer.write("Hello, i am abhinav!");
+            writer.write("Hello, i am abhinav bbbbbbbbbbbbbbbbbbbbhfdhfdhfdhfdhfdhdfhfhdfhdfhdfhdfhfdhdfhdfhdfdhdfhdfh!");
             writer.close();
 
 
             String[] command = {"/usr/bin/open", "-a", "TextEdit", filePath};
-            Runtime.getRuntime().exec(command);
+            Runtime.getRuntime().gc();
+
+
+            System.out.println(Runtime.getRuntime().maxMemory());
 
             System.out.println("Text editor opened with 'Hello, World!' written inside.");
         } catch (IOException e) {

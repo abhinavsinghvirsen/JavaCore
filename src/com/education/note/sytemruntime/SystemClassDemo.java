@@ -13,10 +13,10 @@ public class SystemClassDemo {
         System.out.println("Hello, World! This is standard output.");
         System.err.println("This is an error message using System.err.");
 
-      /*  // Fetching and displaying environment variables.
+      // Fetching and displaying environment variables.
         String path = System.getenv("PATH");
         System.out.println("Environment Variable PATH: " + path);
-
+        System.exit(0);
         // Retrieving system properties and displaying them.
         String osName = System.getProperty("os.name");
         System.out.println("Operating System: " + osName);
@@ -31,6 +31,8 @@ public class SystemClassDemo {
         long end = System.nanoTime();
         System.out.println("Time elapsed for the operation: " + (end - start) + " nanoseconds");
 
+        System.out.println(System.currentTimeMillis());
+
         // Copying elements from one array to another.
         int[] src = {1, 2, 3, 4};
         int[] dest = new int[4];
@@ -44,7 +46,7 @@ public class SystemClassDemo {
         // Exiting the program (disabled for demonstration).
         System.out.println("\nPreparing to terminate the program...");
         // Uncomment the following line to test program termination.
-        // System.exit(0);*/
+
 
 
     }
